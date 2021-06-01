@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
+# Used .csv data from udacity Nanodegree program
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
