@@ -1,6 +1,6 @@
 import time
-import pandas as pd
-import numpy as np
+import pandas as pd # get to pd library: https://pandas.pydata.org/
+import numpy as np # get to np library https://numpy.org/
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
