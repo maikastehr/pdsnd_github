@@ -4,7 +4,7 @@
 1st June 2021
 
 ### Project Title
-Bikeshare python project for Udacity Nanodegree Datascience
+Bikeshare python project for Udacity Nanodegree Datascience Program
 
 ### Description
 Bikeshare data from three different US contries (Chicago, Washington, New York City) has been automatically transformed and prepared for further calculations. It is an interactive project with User input to get more details on what the user would like to analyze within the given data. For example the User recieves details about most used bikesharing stations per city.
