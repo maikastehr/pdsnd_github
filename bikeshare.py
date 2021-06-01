@@ -1,12 +1,13 @@
 import time
-import pandas as pd
-import numpy as np
+import pandas as pd # get to pd library: https://pandas.pydata.org/
+import numpy as np # get to np library https://numpy.org/
 
 # Used .csv data from udacity Nanodegree program
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+# function to get data filtered
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -40,7 +41,7 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
-
+# function to load data
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -80,7 +81,7 @@ def load_data(city, month, day):
     
     return df
 
-
+# function to work with time
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
@@ -107,7 +108,7 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# function to get statistical values
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -136,7 +137,7 @@ def station_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# function to define trip duration
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
@@ -155,7 +156,7 @@ def trip_duration_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# functuin to get some user information
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
@@ -194,7 +195,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# function to get all things together
 def main():
     while True:
         city, month, day = get_filters()
